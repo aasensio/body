@@ -16,31 +16,31 @@
         
           <div id="weight" style="position: absolute; left: 180px; top:800px">
               <label>Peso [kg]
-              <input id="weightstr" name="weightstr" min="40.0" max="176.0" value="65.0" step="0.1" onchange="change_weight(this.value)" type="range">
+              <input id="weightstr" name="weightstr" min="40.0" max="176.0" value="65.0" step="0.1" oninput="change_weight(this.value, false)" onchange="change_weight(this.value, true)" type="range">
               <span id="weight_label">65.0</span>
               </div>
       
           <div id="height" style="position: absolute; left: 180px; top:830px">
               <label>Altura [m]
-              <input id="heightstr" name="heightstr" min="1.46" max="2.00" value="1.60" step="0.01" onchange="change_height(this.value)" type="range">
+              <input id="heightstr" name="heightstr" min="1.46" max="2.00" value="1.60" step="0.01" oninput="change_height(this.value, false)" onchange="change_height(this.value, true)" type="range">
               <span id="height_label">1.60</span>
               </div>
       
           <div id="chest" style="position: absolute; left: 175px; top:860px">
               <label>Pecho [m]
-              <input id="cheststr" name="cheststr" min="0.70" max="1.94" value="0.90" step="0.01" onchange="change_chest(this.value)" type="range">
+              <input id="cheststr" name="cheststr" min="0.70" max="1.94" value="0.90" step="0.01" oninput="change_chest(this.value, false)" onchange="change_chest(this.value, true)" type="range">
               <span id="chest_label">0.90</span>
               </div>
 
           <div id="waist" style="position: absolute; left: 170px; top:890px">
                 <label>Cintura [m]
-                <input id="waiststr" name="waiststr" min="0.60" max="1.83" value="0.65" step="0.01" onchange="change_waist(this.value)" type="range">
+                <input id="waiststr" name="waiststr" min="0.60" max="1.83" value="0.65" step="0.01" oninput="change_waist(this.value, false)" onchange="change_waist(this.value, true)" type="range">
                 <span id="waist_label">0.65</span>
                 </div>
       
           <div id="hip" style="position: absolute; left: 170px; top:920px">
               <label>Cadera [m]
-              <input id="hipstr" name="hipstr" min="0.81" max="1.75" value="0.90" step="0.01" onchange="change_hip(this.value)" type="range">
+              <input id="hipstr" name="hipstr" min="0.81" max="1.75" value="0.90" step="0.01" oninput="change_hip(this.value, false)" onchange="change_hip(this.value, true)" type="range">
               <span id="hip_label">0.90</span>
               </div>
       

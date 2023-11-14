@@ -86,29 +86,39 @@ async function run_inference() {
       }      
 
 
-     function change_weight(value) {
+     function change_weight(value, redraw=false) {        
         document.getElementById('weight_label').innerHTML = value;        
-        run_inference();
+        if (redraw) {
+            run_inference();
+        }
     }
 
-    function change_height(value) {
+    function change_height(value, redraw=false) {
         document.getElementById('height_label').innerHTML = value;        
-        run_inference();
+        if (redraw) {
+            run_inference();
+        }
     }
 
-    function change_chest(value) {
+    function change_chest(value, redraw=false) {
         document.getElementById('chest_label').innerHTML = value;        
-        run_inference();
+        if (redraw) {
+            run_inference();
+        }
     }
 
-    function change_hip(value) {
+    function change_hip(value, redraw=false) {
         document.getElementById('hip_label').innerHTML = value;        
-        run_inference();
+        if (redraw) {
+            run_inference();
+        }
     }
 
-    function change_waist(value) {
+    function change_waist(value, redraw=false) {
         document.getElementById('waist_label').innerHTML = value;        
-        run_inference();
+        if (redraw) {
+            run_inference();
+        }
     }
 
     function change_gender(selectedObject) {        
